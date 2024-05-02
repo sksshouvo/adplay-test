@@ -5,4 +5,4 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CampaignController;
 
 Route::apiResource('campaign', CampaignController::class);
-// Route::post('campaign', [CampaignController::class, 'store']);
+Route::apiResource('bid-request', BidRequestController::class);
