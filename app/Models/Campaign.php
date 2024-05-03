@@ -56,4 +56,6 @@ class Campaign extends Model
         "native_data_price",
         "native_img_icon" 
     ];
+
+    
 }

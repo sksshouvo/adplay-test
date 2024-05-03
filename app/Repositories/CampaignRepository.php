@@ -20,7 +20,7 @@ class CampaignRepository
 
     }
 
-    public function update(array $data,$id): mixed{
+    public function update(array $data, $id): mixed{
        return Campaign::whereId($id)->update($data);
     }
     
