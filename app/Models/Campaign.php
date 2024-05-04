@@ -58,34 +58,38 @@ class Campaign extends Model
         "native_img_icon" 
     ];
 
-    public function scopeOsWiseFilter (Builder $query, $os = NULL) {
+    public function scopeOsWiseFilter (Builder $query, string $os = NULL) {
         if ($os) {
             $query->where("hs_os", "like" ,"%{$os}%");
         }
     }
 
-    public function scopeDeviceModelWiseFiter(Builder $query, $model = NULL) {
+    public function scopeDeviceModelWiseFilter(Builder $query, string $model = NULL) {
         
         if ($model) {
             $query->where("hs_model", "like" ,"%{$model}%");
         }
     } 
-    public function scopeCountryWiseFilter (Builder $query, $country = NULL) {
+    public function scopeCountryWiseFilter (Builder $query, string $country = NULL) {
 
         if ($country) {
             $query->where("country", $country);
         }
     } 
-    public function scopeCityWiseFilter (Builder $query, $city) {
+    public function scopeCityWiseFilter (Builder $query, string $city) {
         if ($city) {
-            //TODO::Start working from here
+            $query->where("city", $city);
         }
 
     } 
-    public function scopeAppNameWiseFilter (Builder $query ) {
-
+    public function scopeAppNameWiseFilter (Builder $query, string $appName) {
+        if ($appName) {
+            $query->where("app_name", $appName);
+        }
     } 
-    public function scopeDimensionWiseFIlter (Builder $query ) {
-
+    public function scopeDimensionWiseFilter(Builder $query, array $dimension) {
+        if ($dimension) {
+            $query->whereIn("dimension", $dimension);
+        }
     } 
 }
