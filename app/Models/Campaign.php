@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class Campaign extends Model
@@ -57,5 +58,34 @@ class Campaign extends Model
         "native_img_icon" 
     ];
 
+public function scopeOsWiseFilter (Builder $query, $os = NULL) {
+    if ($os) {
+        $query->where("hs_os", "like" ,"%{$os}%");
+    }
+}
+
+public function scopeDeviceModelWiseFiter(Builder $query, $model = NULL) {
     
+    if ($model) {
+        $query->where("hs_model", "like" ,"%{$model}%");
+    }
+} 
+public function scopeCountryWiseFilter (Builder $query, $country = NULL) {
+
+    if ($country) {
+        $query->where("country", $country);
+    }
+} 
+public function scopeCityWiseFilter (Builder $query, $city) {
+    if ($city) {
+
+    }
+
+} 
+public function scopeAppNameWiseFilter (Builder $query ) {
+
+} 
+public function scopeDimensionWiseFIlter (Builder $query ) {
+
+} 
 }

@@ -5,7 +5,7 @@ namespace App\Repositories;
 use App\Interfaces\CampaignRepositoryInterface;
 use App\Models\Campaign;
 
-class CampaignRepository
+class CampaignRepository implements CampaignRepositoryInterface
 {
     public function index(): mixed {
         return Campaign::all();
