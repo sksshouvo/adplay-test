@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "aebad2b5-4ef3-4369-96c0-a67045549250",
+		"name": "adplay-test",
+		"description": "# 🚀 Get started here\n\nThis template guides you through CRUD operations (GET, POST, PUT, DELETE), variables, and tests.\n\n## 🔖 **How to use this template**\n\n#### **Step 1: Send requests**\n\nRESTful APIs allow you to perform CRUD operations using the POST, GET, PUT, and DELETE HTTP methods.\n\nThis collection contains each of these [request](https://learning.postman.com/docs/sending-requests/requests/) types. Open each request and click \"Send\" to see what happens.\n\n#### **Step 2: View responses**\n\nObserve the response tab for status code (200 OK), response time, and size.\n\n#### **Step 3: Send new Body data**\n\nUpdate or add new data in \"Body\" in the POST request. Typically, Body data is also used in PUT request.\n\n```\n{\n    \"name\": \"Add your name in the body\"\n}\n\n ```\n\n#### **Step 4: Update the variable**\n\nVariables enable you to store and reuse values in Postman. We have created a [variable](https://learning.postman.com/docs/sending-requests/variables/) called `base_url` with the sample request [https://postman-api-learner.glitch.me](https://postman-api-learner.glitch.me). Replace it with your API endpoint to customize this collection.\n\n#### **Step 5: Add tests in the \"Tests\" tab**\n\nTests help you confirm that your API is working as expected. You can write test scripts in JavaScript and view the output in the \"Test Results\" tab.\n\n<img src=\"https://content.pstmn.io/b5f280a7-4b09-48ec-857f-0a7ed99d7ef8/U2NyZWVuc2hvdCAyMDIzLTAzLTI3IGF0IDkuNDcuMjggUE0ucG5n\">\n\n## 💪 Pro tips\n\n- Use folders to group related requests and organize the collection.\n- Add more [scripts](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/) in \"Tests\" to verify if the API works as expected and execute workflows.\n    \n\n## 💡Related templates\n\n[API testing basics](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9a37a28-055b-49cd-8c7e-97494a21eb54&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[API documentation](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9c28f47-1253-44af-a2f3-20dce4da1f18&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[Authorization methods](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=31a9a6ed-4cdf-4ced-984c-d12c9aec1c27&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5540193",
+		"_collection_link": "https://pulse-tech-ltd.postman.co/workspace/Laravel-Api-Check~7a7e803f-9ac7-468e-92bb-c96615ce1332/collection/5540193-aebad2b5-4ef3-4369-96c0-a67045549250?action=share&source=collection_link&creator=5540193"
+	},
+	"item": [
+		{
+			"name": "Campaign",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "eab08bcf-9673-4a04-9afc-6450ae73612f"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"campaignname\": \"Test_Banner_13th-31st_march_Developer\",\r\n    \"advertiser\": \"TestGP\",\r\n    \"code\": \"118965F12BE33FB7E\",\r\n    \"appid\": \"20240313103027\",\r\n    \"tld\": \"https://adplaytechnology.com/\",\r\n    \"portalname\": null,\r\n    \"creative_type\": \"1\",\r\n    \"creative_id\": 167629,\r\n    \"day_capping\": 0,\r\n    \"dimension\": \"320x480\",\r\n    \"attribute\": \"rich-media\",\r\n    \"url\": \"https://adplaytechnology.com/\",\r\n    \"billing_id\": \"123456789\",\r\n    \"price\": 0.1,\r\n    \"bidtype\": \"CPM\",\r\n    \"image_url\": \"https://s3-ap-southeast-1.amazonaws.com/elasticbeanstalk-ap-southeast-1-5410920200615/CampaignFile/20240117030213/D300x250/e63324c6f222208f1dc66d3e2daaaf06.png\",\r\n    \"htmltag\": null,\r\n    \"from_hour\": \"0\",\r\n    \"to_hour\": \"23\",\r\n    \"hs_os\": \"Android,iOS,Desktop\",\r\n    \"operator\": \"Banglalink,GrameenPhone,Robi,Teletalk,Airtel,Wi-Fi\",\r\n    \"device_make\": \"No Filter\",\r\n    \"country\": \"Bangladesh\",\r\n    \"city\": null,\r\n    \"lat\": null,\r\n    \"lng\": null,\r\n    \"app_name\": null,\r\n    \"user_list_id\": 0,\r\n    \"adplay_logo\": 1,\r\n    \"vast_video_duration\": null,\r\n    \"logo_placement\": 1,\r\n    \"hs_model\": null,\r\n    \"is_rewarded_inventory\": 0,\r\n    \"pixel_tag\": null,\r\n    \"dmp_campaign_audience\": 0,\r\n    \"platform\": null,\r\n    \"open_publisher\": 1,\r\n    \"audience_targeting\": 0,\r\n    \"native_title\": null,\r\n    \"native_type\": null,\r\n    \"native_data_value\": null,\r\n    \"native_data_cta\": null,\r\n    \"native_data_rating\": null,\r\n    \"native_data_price\": null,\r\n    \"native_img_icon\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/campaign",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"campaign"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "bid-request",
+			"item": [
+				{
+					"name": "Bid-request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "0f0e39ff-dc59-491a-bee4-3156d75954be"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"myB92gUhMdC5DUxndq3yAg\",\r\n    \"imp\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"banner\": {\r\n                \"w\": 320,\r\n                \"h\": 50,\r\n                \"pos\": 1,\r\n                \"api\": [\r\n                    3,\r\n                    5,\r\n                    6,\r\n                    7\r\n                ],\r\n                \"format\": [\r\n                    {\r\n                        \"w\": 776,\r\n                        \"h\": 393\r\n                    },\r\n                    {\r\n                        \"w\": 667,\r\n                        \"h\": 375\r\n                    },\r\n                    {\r\n                        \"w\": 640,\r\n                        \"h\": 360\r\n                    },\r\n                    {\r\n                        \"w\": 592,\r\n                        \"h\": 360\r\n                    },\r\n                    {\r\n                        \"w\": 568,\r\n                        \"h\": 320\r\n                    },\r\n                    {\r\n                        \"w\": 320,\r\n                        \"h\": 480\r\n                    },\r\n                    {\r\n                        \"w\": 750,\r\n                        \"h\": 200\r\n                    },\r\n                    {\r\n                        \"w\": 400,\r\n                        \"h\": 300\r\n                    }\r\n                ]\r\n            },\r\n            \"displaymanager\": \"GOOGLE\",\r\n            \"instl\": 1,\r\n            \"tagid\": \"3167273236690230250\",\r\n            \"bidfloor\": 0.01,\r\n            \"bidfloorcur\": \"USD\",\r\n            \"secure\": 1,\r\n            \"exp\": 3600,\r\n            \"metric\": [\r\n                {\r\n                    \"type\": \"click_through_rate\",\r\n                    \"value\": 0.19889350235462189,\r\n                    \"vendor\": \"EXCHANGE\"\r\n                },\r\n                {\r\n                    \"type\": \"viewability\",\r\n                    \"value\": 0.97999999999999998,\r\n                    \"vendor\": \"EXCHANGE\"\r\n                }\r\n            ],\r\n            \"ext\": {\r\n                \"billing_id\": [\r\n                    \"123456789\",\r\n                    \"152349838468\"\r\n                ],\r\n                \"publisher_settings_list_id\": [\r\n                    \"10210479292634817089\",\r\n                    \"14735124967324597266\"\r\n                ],\r\n                \"allowed_vendor_type\": [\r\n                    785,\r\n                    767,\r\n                    144\r\n                ],\r\n                \"ampad\": 2,\r\n                \"creative_enforcement_settings\": {\r\n                    \"policy_enforcement\": 2,\r\n                    \"scan_enforcement\": 1,\r\n                    \"publisher_blocks_enforcement\": 1\r\n                },\r\n                \"auction_environment\": 0\r\n            }\r\n        }\r\n    ],\r\n    \"app\": {\r\n        \"name\": \"com.ludo.king\",\r\n        \"bundle\": \"com.ludo.king\",\r\n        \"publisher\": {\r\n            \"id\": \"pub-5742233882270312\",\r\n            \"ext\": {\r\n                \"country\": \"GB\"\r\n            }\r\n        },\r\n        \"content\": {\r\n            \"url\": \"https://play.google.com/store/apps/details?id=com.firsttouchgames.dls7\",\r\n            \"userrating\": \"4.3\",\r\n            \"livestream\": 0,\r\n            \"language\": \"en\"\r\n        },\r\n        \"storeurl\": \"https://play.google.com/store/apps/details?id=com.firsttouchgames.dls7\",\r\n        \"ext\": {\r\n            \"inventorypartnerdomain\": \"\"\r\n        }\r\n    },\r\n    \"device\": {\r\n        \"ua\": \"Mozilla/5.0 (Linux; Android 11; M2004J19C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36 (Mobile; afma-sdk-a-v224417037.224417037.0)\",\r\n        \"ip\": \"103.92.152.0\",\r\n        \"geo\": {\r\n            \"lat\": 23.774545669555664,\r\n            \"lon\": 90.440811157226562,\r\n            \"country\": \"BGD\",\r\n            \"city\": \"Dhaka\",\r\n            \"zip\": \"1212\"\r\n        },\r\n        \"make\": \"xiaomi\",\r\n        \"model\": \"m2004j19c\",\r\n        \"os\": \"android\",\r\n        \"osv\": \"11\",\r\n        \"devicetype\": 4,\r\n        \"ifa\": \"90637fa5-79c8-4a22-97bd-0c8c7e853f16\",\r\n        \"lmt\": 0,\r\n        \"w\": 776,\r\n        \"h\": 393,\r\n        \"pxratio\": 2.75,\r\n        \"ext\": {\r\n            \"user_agent_data\": {\r\n                \"platform\": {\r\n                    \"brand\": \"Android\",\r\n                    \"version\": [\r\n                        \"11\"\r\n                    ]\r\n                },\r\n                \"mobile\": 1,\r\n                \"model\": \"M2004J19C\",\r\n                \"browsers\": [\r\n                    {\r\n                        \"brand\": \"Mozilla\",\r\n                        \"version\": [\r\n                            \"5\",\r\n                            \"0\"\r\n                        ]\r\n                    },\r\n                    {\r\n                        \"brand\": \"AppleWebKit\",\r\n                        \"version\": [\r\n                            \"537\",\r\n                            \"36\"\r\n                        ]\r\n                    },\r\n                    {\r\n                        \"brand\": \"Version\",\r\n                        \"version\": [\r\n                            \"4\",\r\n                            \"0\"\r\n                        ]\r\n                    },\r\n                    {\r\n                        \"brand\": \"Chrome\",\r\n                        \"version\": [\r\n                            \"107\",\r\n                            \"0\",\r\n                            \"5304\",\r\n                            \"105\"\r\n                        ]\r\n                    },\r\n                    {\r\n                        \"brand\": \"Mobile Safari\",\r\n                        \"version\": [\r\n                            \"537\",\r\n                            \"36\"\r\n                        ]\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    },\r\n    \"user\": {\r\n        \"id\": \"CAESEK7QRNHvCqCtWwFtkJjMQVU\",\r\n        \"ext\": {}\r\n    },\r\n    \"at\": 1,\r\n    \"tmax\": 1000,\r\n    \"cur\": [\r\n        \"USD\"\r\n    ],\r\n    \"bcat\": [\r\n        \"IAB1-2\"\r\n    ],\r\n    \"source\": {\r\n        \"ext\": {\r\n            \"omidpn\": \"Google\",\r\n            \"omidpv\": \"afma-sdk-a-v223712999.222508000.1\",\r\n            \"schain\": {\r\n                \"complete\": 1,\r\n                \"nodes\": [\r\n                    {\r\n                        \"asi\": \"google.com\",\r\n                        \"sid\": \"pub-5742233882270312\",\r\n                        \"hp\": 1\r\n                    }\r\n                ],\r\n                \"ver\": \"1.0\"\r\n            }\r\n        }\r\n    },\r\n    \"ext\": {\r\n        \"google_query_id\": \"AA8e6VI-G-6-PHEjFD9KLYFQqH6v_SGtU6wcSv_E4yC7YgDuY37SAecQnCz_PggyO4x3-KIFQA\",\r\n        \"fcap_scope\": 3,\r\n        \"privacy_treatments\": {\r\n            \"allow_user_data_collection\": 1\r\n        }\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/bid-request",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"bid-request"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "1"
+		},
+		{
+			"key": "base_url",
+			"value": "https://postman-rest-api-learner.glitch.me/"
+		}
+	]
+}
